@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Group 5 - Assignment 3 -->
+<!-- Student1: Abdeali Mody - Student ID: 301085484 -->
+<!-- Student2: Juliana de Carvalho - Student ID: 301137060 -->
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="20dp"
+    android:layout_marginLeft="10dp"
+    android:padding="5dp"
+    tools:context=".CheckoutActivity1">
+
+    <TableRow>
+        <TextView
+            android:text=" Customer Name : "
+            android:width ="120dp"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            />
+        <EditText
+            android:id="@+id/txtCustomerName"
+            android:width="200dp" />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:text=" Address : "
+            android:layout_width="120dp"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            />
+
+        <EditText
+            android:id="@+id/txtAddr"
+            android:width="200dp"
+            android:inputType="textPostalAddress" />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:text=" Postal Code : "
+            android:layout_width="120dp"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            />
+
+        <EditText
+            android:id="@+id/txtPostalCode"
+            android:width="200dp"
+            android:inputType="textPostalAddress" />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:text=" Mobile No. : "
+            android:layout_width="120dp"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            />
+
+        <EditText
+            android:id="@+id/txtMoileNumber"
+            android:width="200dp"
+            android:inputType="phone" />
+    </TableRow>
+    <TableRow tools:ignore="ExtraText">
+        <TextView
+            android:text=" Card Type : "
+            android:layout_width="120dp"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            />
+
+        <Spinner
+            android:id="@+id/txtCardType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/array_cType"
+            android:spinnerMode="dropdown" />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:text=" Credit Card Number : "
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            />
+
+        <EditText
+            android:id="@+id/txtCCNum"
+            android:width="200dp"
+            android:inputType="number" />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:text=" Expiry Date : "
+            android:layout_width="120dp"
+
+            android:textSize="18dp"
+            android:textStyle="bold"
+            />
+
+        <EditText
+            android:id="@+id/txtExpiryDate"
+            android:width="200dp"
+            android:inputType="phone" />
+    </TableRow>
+    <TableRow>
+
+        <Button
+            android:id="@+id/buttonOrder"
+            android:text="Order"
+            android:layout_marginTop="20dp"
+            android:textAlignment="center"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="#FFFFFF"/>
+    </TableRow>
+
+</TableLayout>
